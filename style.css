@@ -1,0 +1,560 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    /*background: url(https://www.eosconsultores.com.br/wp-content/uploads/2019/01/1370958230_1314221061_nevseoboi.com_.ua_radiant-wallpapers-collection-42.jpg);
+    height: 725px;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;*/
+    color: #ededed;
+}
+
+header{
+    border-bottom: #00abf0 solid 3px;
+    background-color: #081b29;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-height: 1280px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 35px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo2{
+    font-size: 35px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    float: right;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 500;
+    transition: 2s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+.line-titulo{
+	max-width: 1400px;
+	margin:0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.ln1{
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	top:20px;
+	background:black;
+}
+
+
+.line-titulo h2{
+	position: relative;
+	background: #F0F8FF;
+	display: inline-block;
+	text-align: center;
+	font-size: 27px;
+	padding:0 20px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 350px;
+}
+
+section.mosaico{
+    color: black;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.item2-mosaico{
+    background-color: #ededed;
+    padding: 90px 40px;
+    width: 40%;
+}
+
+.item2-mosaico h2{
+    font-size: 40px;
+}
+
+.item2-mosaico p{
+    font-size: 20px;
+}
+
+.home{
+    background-color: #081b29;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    left: 100px;
+    position: relative;
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-30px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.home-content{
+    display: inline-block;
+    align-items: center;
+    height: 350px;
+    border-radius: 20px;
+    max-width: 600px;
+    background-color: #00acf041;
+    padding: 75px 2%;
+}
+
+.home-content h1{
+    font-size: 35px;
+    font-weight: 700px;
+}
+
+.home-content p{
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+
+.navbar2 img{
+    padding-left: 25px;
+}
+
+.navbar2 a{
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 500;
+    transition: 2s;
+}
+
+.arrow{
+    position: relative;
+    top: 70px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../imagens/arrow.png);
+    background-size: 100% 100%;
+}
+
+section.mosaico1{
+    padding: 50px 2%;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-image: url(../imagens/terragif.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.mosaico1 h2{
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+section.mosaico1 p{
+    font-size: 30px;
+}
+
+section.mosaico1 .container{
+    max-width: 1000px;
+}
+
+section.mosaico2{
+    padding: 100px 2%;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    background-image: url(../imagens/2c8e7b38-ec70-4094-bab8-17d3be6d641d.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.mosaico2 h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+section.mosaico2 p{
+    padding-top: 25px;
+}
+
+section.flex-mosaico p{
+    font-size: 40px;
+}
+
+section.mosaico2 .container{
+    max-width: 1000px;
+}
+
+
+section.mosaico3{
+    min-height: 90%;
+	padding: 60px 2% 20px 2%;
+    color: black;
+    background-color: #F0F8FF;
+}
+
+section.mosaico3 .container{
+    max-width: 840px;
+	margin-top: 30px;
+}
+
+section.mosaico3 .descricao-autor{
+	margin-top: 20px;
+}
+
+.descricao-autor h2{
+	font-size: 24px;
+}
+
+.descricao-autor p{
+	line-height: 28px;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.descricao-autor2{
+	margin-top: 40px;
+}
+
+.img-small {
+    width: 30%;
+    padding-top: 30%;
+    float: left;
+    background-image: url(../imagens/terra2gif.gif);
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.descricao-autor2 p{
+    float: left;
+    width: 70%;
+    line-height: 28px;
+    padding: 70px 20px;
+}
+
+section.mosaico3 .img-destaque-sobre {
+    width: 100%;
+    padding-top: 60%;
+    background-image: url(../imagens/aguaplata.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.mosaico3 ul{
+    float: left;
+    width: 70%;
+    line-height: 28px;
+    padding: 10px 20px;
+}
+
+section.section-1 {
+    padding: 90px 2%;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+
+section.section-1 h2{
+    text-align: center;
+    font-weight: normal;
+    color: black;
+    font-size: 40px;
+    padding: 15px 0;
+}
+
+section.section-1 p{
+    text-align: center;
+    font-weight: normal;
+    color: black;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.container-single img{
+    position: relative;
+    left: 150px;
+    padding-top: 20px;
+}
+
+section.section-1 .center{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-single {
+    float: left;
+    width: 33.333%;
+    padding: 10px 30px;
+    min-height: 500px;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    background-color: white;
+    border-radius: 100px;
+    border-left: 5px solid #0093E9 ;
+}
+
+section.mosaico-esgoto{
+    padding: 100px 2%;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    background-image: url(../imagens/esgototratamento.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.mosaico-esgoto h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+section.mosaico-esgoto p{
+    font-size: 25px;
+}
+
+section.mosaico-esgoto ul{
+    padding: 20px 25px;
+    font-size: 25px;
+}
+
+section.mosaico-esgoto .container{
+    max-width: 1000px;
+}
+
+section.mosaico4{
+    min-height: 90%;
+	padding: 60px 2% 20px 2%;
+    color: black;
+    background-color: #F0F8FF;
+}
+
+section.mosaico4 p{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+section.mosaico4 .img-destaque-sobre {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    left: 26%;
+    background-image: url(../imagens/maonaagua.webp);
+    background-size: 100% 100%;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 71px 71px 71px 71px;
+}
+
+.home2{
+    background-color: #081b29;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.home2 img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    left: 70px;
+    position: relative;
+    transform: translateX(0px);
+    animation: terra 6s ease-out infinite;
+}
+
+@keyframes terra {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+section.mosaico5{
+    padding: 100px 2%;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    background-image: url(../imagens/bela-foto-do-mar-com-uma-montanha-a-distancia-e-um-ceu-claro.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.mosaico5 h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+section.mosaico5 p{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+section.mosaico5 ul{
+    padding: 20px 25px;
+    font-size: 20px;
+}
+
+section.mosaico5 .container{
+    max-width: 1000px;
+}
+
+footer{
+    width: 100%;
+    display: inline-block;
+    background: #ccc;
+    height: 20vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}   
+
+.footer-distributed {
+    background-color: #081b29;;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+    
+  }
+  
+    .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+    .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
